@@ -1,0 +1,32 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+pygments: true
+markdown: kramdown
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: dbyll
+
+description: Stylish Jekyll Theme
+author:
+  name: joetoth
+  email: joetoth@gmail.com
+  github: joetoth
+  twitter: joeytoth
+  pinterest: weazelb0y
+  linkedin: joetoth
+  bio: Google Engineer, Entrepreneur powered by Engineering
+  email_md5: 3261f8b71e1a154e8e35cc68b51c6c7
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
