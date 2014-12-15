@@ -7,6 +7,33 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Pyed Piper, sed and awk alternative</title>
+				<description>&lt;p&gt;As much as I love looking up sed/awk commands (or writing java)  for one-off
+text processing Pyed Piper seems to be a super easy alternative.
+&lt;a href=&quot;https://code.google.com/p/pyp/&quot;&gt;https://code.google.com/p/pyp/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just converted a class with inline comments that look like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Picture&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;picture&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// current picture&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;  * current picture&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;  */&lt;/span&gt;
+ &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Picture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;with the following command (and re-format with my IDE):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;cat Seam.java | pyp &lt;span class=&quot;s2&quot;&gt;&amp;quot;slash | &amp;#39;/**\n*&amp;#39; + p[2] + &amp;#39;\n*/\n&amp;#39; + p[0] +&amp;#39;{}&amp;#39; &amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Tue, 16 Dec 2014 10:24:47 -0500</pubDate>
+				<link>/programming/2014/12/16/pyed-piper.html</link>
+				<guid isPermaLink="true">/programming/2014/12/16/pyed-piper.html</guid>
+			</item>
+		
+			<item>
 				<title>Programming challenge sites</title>
 				<description>&lt;p&gt;I’ve been checking out a bunch of sites where you can improve your knowledge of
 algorithms and puzzle solving. In no particular order here are some:&lt;/p&gt;
